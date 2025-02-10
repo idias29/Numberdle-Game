@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 20px;
+}
+.container {
+    border: 4px solid black;
+    background-color: rgb(37, 37, 37);
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.digit-box {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    line-height: 50px;
+}
+.correct {
+    background-color: green;
+    color: white;
+}
+.wrong-position {
+    background-color: rgb(255, 187, 0);
+    color: white;
+}
+.incorrect {
+    background-color: rgb(209, 3, 3);
+    color: white;
+}
+.previous-guesses {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guess-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 0.5s forwards;
+}
+.guess-box {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+.submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+.color-info {
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap; 
+}
+.color-info div {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-flex; 
+    align-items: center;
+    gap: 5px;
+}
+.color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.green { background-color: green; }
+.orange { background-color: rgb(255, 187, 0); }
+.red { background-color: rgb(209, 3, 3); }
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
