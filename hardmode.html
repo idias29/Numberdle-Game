@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numberdle</title>
+    <link rel="stylesheet" href="csshardmode.css">
+</head>
+<body>
+    <nav><a href="index.html"><span style="color : white"><u><h2>Normal Mode</h2></u></span></a></nav>
+    <div class="container">
+        <h1>Guess The Number</h1>
+        <p>Guess the 4-digit number !</p>
+        <div class="color-info">
+            <div><span class="color-box green"></span>Correct</div>
+            <div><span class="color-box orange"></span>Wrong position</div>
+            <div><span class="color-box red"></span>Incorrect</div>
+        </div>
+        <div class="input-container">
+            <input type="text" maxlength="1" class="digit-box" id="digit1" autofocus>
+            <input type="text" maxlength="1" class="digit-box" id="digit2">
+            <input type="text" maxlength="1" class="digit-box" id="digit3">
+            <input type="text" maxlength="1" class="digit-box" id="digit4">
+            <input type="text" maxlength="1" class="digit-box" id="digit5">
+            <input type="text" maxlength="1" class="digit-box" id="digit6">
+            <input type="text" maxlength="1" class="digit-box" id="digit7">
+        </div>
+        <button class="submit-btn" id="submit-btn">Submit</button>
+        <div id="feedback"></div>
+        <p id="tries">Tries left : 15</p>
+        <div class="previous-guesses" id="previous-guesses"></div>
+    </div>
+    <script src="jschallenge1.js"></script>
+</body>
+</html>
